@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		img{
+			height: 100px;
+			width: 100px;
+		}
+		#text{
+			float: right;
+		}
+		.navbar{
+			background-color: #333;
+			overflow: hidden;
+			color: white;
+			font-size: 20px;
+		}
+		.navbar a {
+            color: #f2f2f2;
+            text-decoration: none;
+        }
+		.navbar a:hover{
+			background-color: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://www.iiit.ac.in/"><img src="iiit-new.png" alt="logo"></a>
+	<a href="https://serc.iiit.ac.in/rdip" id="text">RDIP</a>
+	<div class="navbar">
+		<a href="home.html">Home</a>
+		<a href="registration.html">Registration Form</a>
+	</div>
+	<form action="details.html" method="GET">
+		<div>
+			<label for="name">First Name:</label>
+			<input type="text" id="name" name="name" required>
+		</div>
+		<br><br>
+		<div>
+			<label for="email">Email:</label>
+			<input type="Email" id="email" name="email" required>
+		</div>
+		<br><br>
+		<div>
+			<label for="number">Phone Number:</label>
+			<input type="tel" id="number" name="number" required pattern="[0-9]{10}">
+		</div>
+		<br><br>
+		<div>
+			<label>Gender:</label>
+			<input type="radio" id="male" name="male" value="gender1">
+			<label for="male">Male</label>
+
+			<input type="radio" id="female" name="female" value="gender2">
+			<label for="female">Female</label>
+
+			<input type="radio" id="other" name="other" value="gender3">
+			<label for="other">Other</label>
+		</div>
+		<br><br>
+		<div>
+			<label>Reason for RDIP:</label>
+			<input type="checkbox" name="reason1" id="reason1" value="reason1">
+			<label for="reason1">HTML</label>
+			
+			<input type="checkbox" name="reason2" id="reason2" value="reason2">
+			<label for="reason2">CSS</label>
+			
+			<input type="checkbox" name="reason3" id="reason3" value="reason3">
+			<label for="reason3">JavaScript</label>
+		</div>
+		<br><br>
+		<div>
+			<label for="college">College:</label>
+			<input type="text" id="college" name="college" required>
+		</div>
+		<br><br>
+		<div>
+			<input type="checkbox" name="declare" id="data" value="si4">
+			<label for="declare">I declare above details given by me are true</label>
+		</div>
+		<br><br>
+		<button type="submit" formtarget="_blank" onclick="return results();">Submit</button>
+		<button type="reset">Reset</button>
+	</form>
+</body>
+</html>
